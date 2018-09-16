@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>个人信息页面</title>
+		<style>
+			span,legend{
+				color: red;
+			}
+		</style>
+	</head>
+	<body>
+		<form action="#" method="get">
+			<h1>请填写个人信息</h1>
+		<fieldset>
+			<legend>基本信息</legend>
+            <h2>姓名<input type="text" name="name" /><span>*</span></h2>
+            <h2>年龄<input type="number" name="demoNum" min="1"
+max="100" step="2"/></h2>
+		</fieldset>	
+		<fieldset>
+			<legend>你想在哪里收到邮件？</legend>
+			<h2>邮箱<input type="email" name="email" placeholder="请输入邮箱" /><span>*</span></h2>
+		</fieldset>
+		<fieldset>
+			<legend>收入情况</legend>
+			<h2>月收入
+				<input type="search" name="yueshouru"
+autocomplete="on" list="ysru" results />
+				<datalist id="ysru">
+					<option>10k-</option>
+					<option>10k+~20k</option>
+					<option>20k+~30k</option>
+					<option>30k+~40k</option>
+					<option>40k+</option>
+				</datalist> 
+			</h2>
+			<h2>银行卡<input type="text" name="card" /> 有效期<input type="date" name="datedemo" /></h2>
+		</fieldset>
+		<fieldset>
+			<legend>选取提交文件</legend>
+			<h2>文件<input type="file" name="file" /></h2>
+		</fieldset>
+		<input type="submit" value="提交" />
+		</form>
+	</body>
+</html>
